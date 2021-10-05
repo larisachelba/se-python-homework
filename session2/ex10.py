@@ -13,6 +13,8 @@
 """
 
 # In variabila l1 si l2 avem urmtoarele liste:
+from pprint import pprint
+
 l1 = [1, 2, 3, 4]
 l2 = ['a', 'b', 'c', 'd']
 
@@ -21,3 +23,10 @@ d1 = {}
 
 # Afisam listele l1 si l2
 print(l1, l2)
+
+# Rezolvare
+
+for i in range(len(l1)):
+    d1[l1[i]] = l2[i]
+
+pprint(d1)

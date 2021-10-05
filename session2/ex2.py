@@ -12,3 +12,7 @@ l2 = [5, 6, 7]
 # Pentru a vedea rezultatul, rulati acest script.
 print(l1)
 print(l2)
+
+# Rezolvare:
+l3=l1+l2
+print(l3)

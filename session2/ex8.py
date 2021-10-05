@@ -8,5 +8,7 @@
 x = input()
 
 # Daca valorea care vine de la tastatura este 'cmi', vom afisa 'OK'
-if x == 'da':
+if x.lower() == 'cmi':
     print('OK')
+else:
+    print('NOT OK')

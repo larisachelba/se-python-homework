@@ -15,3 +15,9 @@ l1 = list(t1) + list(t2)
 
 # Afisam lista
 print(l1)
+
+# Rezolvare
+
+l2=[2]
+l3 = list(t1) +l2+ list(t2)
+print(l3)

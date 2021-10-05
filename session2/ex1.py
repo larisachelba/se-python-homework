@@ -12,3 +12,8 @@ l1 = [1, 2, 3, 4]
 
 # Afisam lista. Pentru a vedea rezultatul, rulati acest script.
 print(l1)
+
+# Rezolvare:
+
+l1.append(10)
+print(l1)
