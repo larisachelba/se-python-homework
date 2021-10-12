@@ -14,3 +14,15 @@
         Veti primi: 1232
         Veti printa: False
 """
+x = input()
+x = int(x)
+z = x
+y = 0
+while x > 0:
+    i = x % 10
+    y = y * 10 + i
+    x = x//10
+if z == y:
+    print(True)
+else:
+    print(False)

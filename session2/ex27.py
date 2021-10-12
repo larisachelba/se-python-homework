@@ -7,3 +7,12 @@
         Veti primi: 5
         Veti printa: 'ashdj' (poate fi orice alt string)
 """
+
+import random
+
+x = int(input())
+y = ""
+l1 = ['a', 's', 'd', 'f', 'g', 'h', 'j']
+for i in range(x):
+    y += random.choice(l1)
+print(y)

@@ -9,3 +9,14 @@
         2 (pentru vocale)
         4 (pentru consoane)
 """
+x = input()
+v = set('aeiouAEIOU')
+vocale = 0
+consoane = 0
+for i in x:
+    if v.__contains__(i):
+        vocale += 1
+    else:
+        consoane += 1
+print(vocale, 'vocale ')
+print(consoane, 'consoane')

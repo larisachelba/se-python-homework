@@ -14,3 +14,15 @@
         Veti primi: 'cojoc'
         Veti printa: True
 """
+x = input()
+y = ""
+
+for i in range(len(x)):
+    y += x[-i-1]
+# a = reversed(x)
+# for c in a:
+#     print(c)
+if x == y:
+    print(True)
+else:
+    print(False)

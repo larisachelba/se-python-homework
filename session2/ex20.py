@@ -16,3 +16,12 @@
             2: 'i'
         }
 """
+
+a = input()
+x = input()
+x = int(x)
+d = {}
+
+for i in range(x):
+    d[i] = a[i]
+print(d)
