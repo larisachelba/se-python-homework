@@ -7,6 +7,20 @@
 """
 
 
-# decorate me
+def dec(func):
+    def wrapper(*args):
+        file = open("output12.data", "w")
+        file.write(str(func(*args)))
+    return wrapper
+
+
+@dec
 def f(x):
     print(x)
+
+
+f('output')
+
+
+
+

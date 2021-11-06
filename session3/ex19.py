@@ -16,3 +16,21 @@
             }
 
 """
+import json
+import random
+
+
+def func(file_name):
+    file = open(file_name + ".json", "w")
+    d1 = {}
+    my_str = 'asdfghjklzxcvbnmqwertyuiop'
+    for i in range(4):
+        j = random.choice(range(11))
+        while j in d1.keys():
+            j = random.choice(range(11))
+        d1[j] = "".join(random.choices(my_str, k=random.choice(range(3, 6))))
+    print(d1)
+    file.write(json.dumps(d1))
+
+
+func('output19')

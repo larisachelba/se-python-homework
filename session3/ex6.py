@@ -7,3 +7,13 @@
         - func('aabbcc')
             ---> 'bbccdd'
 """
+
+
+def func(string):
+    new_string = ''
+    for character in string:
+        new_string += chr(ord(character) + 1)
+    return new_string
+
+
+print(func(input()))

@@ -12,3 +12,14 @@
     Observatii:
         - functia trebuie sa aiba MAXIM 1 linie de cod ca si body
 """
+
+
+def func(pref, word, suf):
+    return pref + word + suf
+
+
+prefix = str(input('Give me the prefix\n'))
+word = str(input('Give me the word\n'))
+suffix = str(input('Give me the suffix\n'))
+
+print(func(prefix, word, suffix))

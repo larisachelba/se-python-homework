@@ -6,6 +6,15 @@
 """
 
 
-# decoarate me
+def deco(func):
+    def wrapper():
+        return ''.join([c.upper() for c in func()])
+    return wrapper
+
+
+@deco
 def f():
     return 'cmi'
+
+
+print(f())

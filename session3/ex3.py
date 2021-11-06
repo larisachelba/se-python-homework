@@ -12,4 +12,13 @@
 
 
 def func(x):
-    pass
+    x = int(x)
+    l1 = []
+    count = 0
+    while count < x:
+        l1.append(count)
+        count += 1
+    return l1
+
+
+print(func(input()))

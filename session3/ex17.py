@@ -19,3 +19,26 @@
             cmicmi
             b
 """
+
+import random
+
+
+def deco(func):
+    def wrapper(*args):
+        file = open("output17.data", "a")
+        file.write(func(*args))
+    return wrapper
+
+
+@deco
+def f(x):
+    x = int(x)
+    my_str = 'asdfghjklzxcvbnm'
+    random_string = ''
+    for i in range(x):
+        random_string += random.choice(my_str)
+    random_string += '\n'
+    return random_string
+
+
+print(f(2))
