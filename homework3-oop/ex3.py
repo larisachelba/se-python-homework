@@ -22,3 +22,28 @@
             - this updates the world_map with the entity_id of the world_entity
             passed as a parameter
 """
+from pprint import pprint
+
+import numpy
+
+
+class World:
+    def __init__(self, map_height: int, map_width: int):
+        self.map_height = map_height
+        self.map_width = map_width
+        self.world_map = None
+
+    def init_world(self):
+        matrix = numpy.zeros([self.map_height, self.map_width], dtype=int)
+        self.world_map = matrix
+
+    def see_world(self):
+        pprint(self.world_map)
+
+    def update_world(self, world_entity):
+        pass
+
+
+if __name__ == '__main__':
+    world1 = World(10, 3)
+    print(world1.init_world())
